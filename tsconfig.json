@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "target": "ES2017",
+    "useDefineForClassFields": false,
+    "noUnusedParameters": true,
+    "newLine": "lf",
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "importHelpers": true,
+    "exactOptionalPropertyTypes": false,
+    "noUncheckedIndexedAccess": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "useUnknownInCatchVariables": false,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strict": true,
+    "declaration": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": false,
+    "jsxFactory": "h",
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "assumeChangesOnlyAffectDirectDependencies": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
+    "stripInternal": true
+  },
+  "files": [
+    "screeps-profiler.ts"
+  ]
+}

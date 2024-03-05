@@ -1,15 +1,18 @@
 {
-  "name": "screeps-profiler",
+  "name": "@alorel/screeps-profiler",
   "version": "2.0.1",
   "description": "A profiler designed for use in the game of Screeps.",
   "main": "screeps-profiler.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
-    "test": "npm run --silent lint && jest --coverage",
-    "lint": "eslint ."
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/screepers/screeps-profiler.git"
+    "url": "https://github.com/Alorel/screeps-profiler.git"
   },
   "keywords": [
     "screeps",
@@ -17,6 +20,10 @@
   ],
   "author": "Gary Borton <gdborton@gmail.com>",
   "license": "ISC",
+  "files": [
+    "screeps-profiler.js",
+    "screeps-profiler.d.ts"
+  ],
   "bugs": {
     "url": "https://github.com/screepers/screeps-profiler/issues"
   },
@@ -28,10 +35,8 @@
     ]
   },
   "devDependencies": {
-    "coveralls": "^2.13.1",
-    "eslint": "^2.2.0",
-    "eslint-config-airbnb": "^6.0.2",
-    "eslint-plugin-react": "^4.1.0",
-    "jest": "^20.0.4"
+    "@types/lodash": "^3.10.9",
+    "@types/screeps": "^3.3.7",
+    "typescript": "^5.3.3"
   }
 }

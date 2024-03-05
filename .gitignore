@@ -1,3 +1,5 @@
-coverage/
-node_modules/
-npm-debug.log
+/coverage/
+/node_modules/
+/npm-debug.log
+/screeps-profiler.js
+/screeps-profiler.d.ts
