@@ -122,12 +122,9 @@ export function profileObject<T extends object>(label: string, obj: T): T {
   const descriptors = Object.getOwnPropertyDescriptors(obj);
 
   for (const prop in descriptors) {
-    if (BLACKLIST.has(prop)) {
-      continue;
-    }
-
     const descriptor = descriptors[prop]!;
-    if (typeof descriptor.value === 'function') {
+    if (!descriptor.configurable || BLACKLIST.has(prop)) {
+      continue;
     }
 
     if (descriptor.get || descriptor.set) {
