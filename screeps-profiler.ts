@@ -80,7 +80,7 @@ export class AlreadyWrappedError extends Error {
 
 export function enable(): void {
   if (enabled) {
-    console.log('Profiler already enabled');
+    console.log('<span style="color:darkred">Profiler already enabled</span>');
     return;
   }
 
