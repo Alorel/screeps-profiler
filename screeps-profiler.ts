@@ -184,7 +184,11 @@ export function profileFn<F extends AnyFn>(originalFunction: F, name: string = o
   }
 
   Object.defineProperty(wrappedFunction, WRAPPED, {value: true});
-  Object.defineProperty(wrappedFunction, 'name', {value: name});
+  Object.defineProperty(wrappedFunction, 'name', {configurable: true, value: name});
+  Object.defineProperty(wrappedFunction, 'toString', {
+    configurable: true,
+    value: originalFunction.toString.bind(originalFunction),
+  });
 
   return wrappedFunction as F;
 }
