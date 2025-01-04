@@ -1,6 +1,6 @@
 {
   "name": "@alorel/screeps-profiler",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "A profiler designed for use in the game of Screeps.",
   "main": "screeps-profiler.js",
   "publishConfig": {
